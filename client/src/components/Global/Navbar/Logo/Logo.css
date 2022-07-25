@@ -1,0 +1,26 @@
+.Logo ul {
+  list-style: none;
+}
+
+.Logo ul li {
+  margin: 0;
+  animation: jump 2.4s infinite;
+}
+
+@keyframes jump {
+  0% {
+    margin: 0;
+  }
+
+  20% {
+    margin: -0.4rem 0 0;
+  }
+
+  40% {
+    margin: 0;
+  }
+
+  100% {
+    margin: 0;
+  }
+}

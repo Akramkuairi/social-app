@@ -1,0 +1,18 @@
+.Chat {
+  padding: 1rem;
+  box-shadow: 0 0 4px var(--font-clr);
+  border-radius: var(--border-radius);
+  background-color: var(--main-comp-clr);
+  margin: 2.5vh 1.4rem 2.5vh 0;
+  height: calc(var(--side-comp-height) * 2 + 2.5vh);
+}
+
+.Chat .User {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 640px) {
+  .Chat {
+    margin: 2.5vh 1.4rem;
+  }
+}

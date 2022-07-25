@@ -1,0 +1,21 @@
+div.EditProfile {
+  height: 480px;
+  justify-content: space-evenly;
+}
+
+.EditProfile div label {
+  margin: 0.8rem 0;
+}
+
+.EditProfile input,
+.EditProfile textarea {
+  border: none;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 4px var(--font-clr);
+}
+
+#description {
+  min-height: 8rem;
+  resize: none;
+}

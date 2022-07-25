@@ -1,0 +1,27 @@
+div.SearchSuggestions {
+  width: 55%;
+  min-height: 3rem;
+  position: absolute;
+  border-radius: 0.4rem;
+  top: calc(var(--navbar-height) + 1rem);
+  background-color: var(--main-comp-clr);
+  box-shadow: 0 0 4px var(--font-clr);
+  align-items: flex-start;
+  text-align: left;
+}
+
+.SearchSuggestions *:link,
+.SearchSuggestions *:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.SearchSuggestions .user {
+  padding: 0.4rem;
+  margin: 0;
+  transition: margin 0.4s;
+}
+
+.SearchSuggestions .user:hover {
+  margin: 0 0 0 0.8rem;
+}

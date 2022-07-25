@@ -1,0 +1,54 @@
+.ProfileCard {
+  margin: 2.5vh 0 2.5vh 1.4rem;
+  background-color: var(--main-comp-clr);
+  height: var(--side-comp-height);
+  display: flex;
+  color: var(--font-clr);
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 4px var(--font-clr);
+  border-radius: var(--border-radius);
+}
+
+.ProfileCard .info {
+  transform: translate(0, -3rem);
+}
+
+.profilePic {
+  width: 6rem;
+  height: 6rem;
+  margin: 0.4rem;
+  border-radius: 50%;
+  border: 0.3rem solid var(--sub-comp-clr);
+}
+
+.ProfileCard .secondHalf {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  justify-content: space-evenly;
+}
+
+.follow {
+  margin: 1rem;
+}
+
+.styleLine {
+  width: 100%;
+  height: 0.13rem;
+  background-color: #cfcece;
+}
+
+.profileSection button {
+  transition: 0.05s;
+}
+
+.profileSection .UserSection button:hover {
+  box-shadow: 0 0 4px var(--font-clr);
+}
+
+@media screen and (max-width: 640px) {
+  .ProfileCard {
+    margin: 2.5vh 1.4rem;
+  }
+}

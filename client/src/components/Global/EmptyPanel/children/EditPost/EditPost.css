@@ -1,0 +1,28 @@
+div.EditPost {
+  height: 400px;
+  /* color: var(--font-clr); */
+  justify-content: space-evenly;
+}
+
+.EditPost div label {
+  margin: 0.8rem 0;
+}
+
+.EditPost textarea {
+  border: none;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 4px var(--font-clr);
+}
+
+#editPost {
+  width: 200%;
+  min-height: 14rem;
+  resize: none;
+}
+
+@media screen and (max-width: 640px) {
+  #editPost {
+    width: calc(100vw - 3rem);
+  }
+}

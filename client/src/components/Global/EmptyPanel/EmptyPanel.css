@@ -1,0 +1,55 @@
+@import "../../../GlobalVars.css";
+
+.EmptyPanelWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 102;
+}
+
+.EmptyPanel {
+  position: relative;
+  width: 49%;
+  height: 100%;
+  margin-left: calc(15% - 4rem);
+  border-radius: 0.4rem;
+  background-color: var(--main-comp-clr);
+  transition: 0.4s;
+  box-shadow: 0 0 4px var(--font-clr);
+}
+
+/* close button style */
+.closeBtn {
+  border: none;
+  background: #0000;
+  position: absolute;
+  right: 0;
+  top: 0.1rem;
+  cursor: pointer;
+}
+
+.closeBtn::before {
+  padding: 0.1rem 0.4rem;
+  content: "x";
+  font-size: large;
+  color: var(--font-clr);
+  font-weight: bolder;
+  box-shadow: 0 0 2px var(--font-clr);
+  border-radius: 0 0.2rem 0 0.2rem;
+  transition: 0.4s;
+}
+
+.closeBtn:hover::before {
+  background: red;
+  box-shadow: 0 0 4px var(--font-clr);
+}
+
+@media screen and (max-width: 640px) {
+  .EmptyPanel {
+    width: calc(100vw - 1rem);
+  }
+}

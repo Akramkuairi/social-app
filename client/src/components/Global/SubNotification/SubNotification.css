@@ -1,0 +1,57 @@
+.SubNotificationBg {
+  border-radius: 0.4rem;
+  width: 14rem;
+  height: 3rem;
+  background: #ddd;
+  position: fixed;
+  right: 1rem;
+  top: 3.6rem;
+  z-index: 100;
+  overflow: hidden;
+  animation: swipeIn 1s 0s ease-in-out,
+    swipeOut 1s 3.5s ease-in-out;
+}
+
+.SubNotification {
+  height: 3rem;
+}
+
+.SubNotification .bar {
+  height: 0.3rem;
+  width: 28rem;
+  position: absolute;
+  left: -14rem;
+  top: 0;
+  animation: fillBar 2s 1s ease-in-out forwards;
+}
+
+
+@keyframes swipeIn {
+  0% {
+    right: -16rem;
+  }
+
+  100% {
+    right: 1rem;
+  }
+}
+
+@keyframes swipeOut {
+  0% {
+    right: 1rem;
+  }
+
+  100% {
+    right: -16rem;
+  }
+}
+
+@keyframes fillBar {
+  0% {
+    left: -14rem;
+  }
+
+  100% {
+    left: 0;
+  }
+}

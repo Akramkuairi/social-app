@@ -1,0 +1,8 @@
+.RightSide {
+  width: 15%;
+  min-width: 180px;
+}
+
+.RightSide > * {
+  overflow: hidden;
+}

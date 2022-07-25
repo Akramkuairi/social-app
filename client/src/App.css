@@ -1,0 +1,32 @@
+body {
+  color: var(--font-clr);
+  word-wrap: break-word;
+}
+
+body .App *:visited,
+body .App *:link {
+  text-decoration: none;
+  color: var(--font-clr);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #0000;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin: calc(var(--navbar-height)) 0 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--sub-comp-clr);
+  /* background: #0487e2; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--font-clr);
+}

@@ -1,0 +1,9 @@
+.PostPage {
+  width: 100%;
+  position: relative;
+}
+
+.PostPage div.PostWrapper {
+  width: 95%;
+  margin: 9rem 2.5% 4rem;
+}

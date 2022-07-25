@@ -1,0 +1,65 @@
+@import "../../../GlobalVars.css";
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  height: var(--navbar-height);
+  box-shadow: 0 0 4px 0 var(--font-clr);
+  background-color: var(--main-comp-clr);
+  justify-content: space-evenly;
+}
+
+.Navbar img {
+  height: 2.2rem;
+  width: 2.2 rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.searchBar {
+  width: 70%;
+  height: 70%;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  border: none;
+}
+
+.searchBar:focus {
+  outline: none;
+}
+
+/* mode */
+.mode {
+  width: 1.8rem;
+  border: none;
+  background: #0000;
+  cursor: pointer;
+}
+.settings {
+  cursor: pointer;
+}
+
+.Navbar .logout {
+  margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .searchBar {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .Navbar svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searchBar {
+    width: 20%;
+  }
+}

@@ -1,0 +1,92 @@
+div.PostWrapper {
+  background-color: var(--main-comp-clr);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 4px var(--font-clr);
+  margin: 4rem 1rem;
+  min-height: 10rem;
+  position: relative;
+  justify-content: space-between;
+}
+
+.PostWrapper .postHeader {
+  height: 6rem;
+  width: 100%;
+  border-radius: 0.8rem 0.8rem 0 0;
+  justify-content: space-between;
+}
+
+.PostWrapper .postHeader .date {
+  margin: 0.4rem 1.4rem 0;
+  font-size: small;
+  text-align: left;
+  color: var(--font-clr);
+  opacity: 0.6;
+}
+
+.postHeader .User {
+  padding: 0.4rem 1rem;
+}
+
+.postHeader .options {
+  margin: -1.6rem 0 0 1rem;
+}
+
+.postHeader .options > button {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.postHeader .options > * {
+  margin: -1.4rem 0 0;
+}
+
+.postHeader .options > * {
+  color: var(--font-clr);
+}
+
+.options > button {
+  font-size: 1.4rem;
+  border: none;
+  background-color: #0000;
+}
+
+.PostWrapper .postBody {
+  text-align: left;
+  padding: 1.2rem;
+  min-height: 6rem;
+  width: 100%;
+}
+
+.PostWrapper .postBody a {
+  width: 100%;
+}
+
+.PostWrapper .postFooter {
+  padding: 0.4em;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.postFooter > * {
+  padding: 0.4rem 1rem;
+  margin: 0 0.4rem 0 0;
+}
+
+.postFooter svg {
+  margin: 0 0.6rem 0 0;
+}
+
+.PostWrapper *:visited,
+.PostWrapper *:link {
+  text-decoration: none;
+  color: #000;
+}
+
+.postFooter img {
+  padding: 0.4rem 1rem;
+}
+
+.postFooter .like:hover {
+  cursor: pointer;
+}

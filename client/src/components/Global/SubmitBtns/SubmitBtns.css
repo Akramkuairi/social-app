@@ -1,0 +1,31 @@
+.SubmitBtns {
+  margin: 1rem;
+}
+
+.SubmitBtns button {
+  width: 4rem;
+  color: var(--font-clr);
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.SubmitBtns .submit {
+  background: #0f06;
+  border: 0.1rem solid #0f0;
+}
+
+.SubmitBtns .cancel {
+  /* to correct the fucking unreasonable fucking code */
+  padding: 0.03rem;
+  /* finish correcting the fucking unreasonable fucking code */
+  background: #f006;
+  border: 0.1rem solid #f00;
+}
+
+.SubmitBtns .submit:hover {
+  background-color: #0f09;
+}
+
+.SubmitBtns .cancel:hover {
+  background-color: #f009;
+}

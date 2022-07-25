@@ -1,0 +1,14 @@
+.Weather {
+  margin: 2.5vh 0 2.5vh 1.4rem;
+  box-shadow: 0 0 4px var(--font-clr);
+  background-color: var(--main-comp-clr);
+  border-radius: var(--border-radius);
+  height: var(--side-comp-height);
+}
+
+@media screen and (max-width: 640px) {
+  .Weather {
+    margin: 2.5vh 1.4rem;
+    height: 20vh;
+  }
+}

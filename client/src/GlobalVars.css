@@ -1,0 +1,31 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.App .btn {
+  background-color: var(--main-comp-clr);
+  color: var(--font-clr);
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  margin: 0.8rem 0.8rem 0.4rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 2px var(--font-clr);
+}
+
+.App .btn:hover {
+  box-shadow: 0 0 4px var(--font-clr);
+}
+
+@media screen and (max-width: 640px) {
+  .App div.comp {
+    width: calc(100vw - 1rem);
+  }
+}

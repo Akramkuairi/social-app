@@ -1,0 +1,38 @@
+@import "../../index.css";
+
+.LoadingPage {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 99;
+}
+
+.LoadingPage div.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+  width: 18rem;
+  min-height: 9.4rem;
+  border-radius: 0.6rem;
+  color: var(--font-clr);
+  background-color: var(--main-comp-clr);
+  box-shadow: 0 0 4px var(--font-clr);
+}
+
+.loadingImg {
+  width: 4rem;
+  animation: rotate 1.5s infinite ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

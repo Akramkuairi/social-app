@@ -1,0 +1,17 @@
+div.FriendsSection {
+  width: 100%;
+  /* justify-content: space-evenly; */
+}
+
+.FriendsSection > * {
+  margin: 0 3rem 1rem;
+  width: 2.4rem;
+  stroke: #000;
+  background-color: #0000;
+}
+
+.FriendsSection button {
+  border: none;
+  background-color: #0000;
+  cursor: pointer;
+}

@@ -1,0 +1,148 @@
+@import "../../GlobalVars.css";
+
+.AuthPage {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 2rem 0;
+  justify-content: space-evenly;
+}
+
+.AuthPage .mainDesciption {
+  margin: 2rem 0;
+  border-radius: var(--border-radius);
+  background-color: #0006;
+  border: 0.1rem solid var(--font-clr);
+}
+
+.AuthPage .title {
+  margin: 1rem;
+  width: 20rem;
+  position: relative;
+  text-align: left;
+}
+
+.AuthPage p {
+  max-width: 25vw;
+  font-size: 1.4rem;
+  margin: 1rem;
+}
+
+.AuthPage .title::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  /* font-size: rem; */
+  left: 0;
+  visibility: hidden;
+  animation: cursor 1s infinite, cursorMovement 3.8s 2s steps(7) forwards;
+}
+
+.AuthPage ul {
+  list-style: none;
+  font-size: 4rem;
+  flex-direction: row-reverse;
+}
+
+.AuthPage ul li {
+  margin: 0.1rem;
+  visibility: hidden;
+}
+
+.AuthPage form {
+  padding: 0.4rem;
+  box-shadow: 0 0 4px 0 #fff;
+  background-color: rgba(60, 60, 60, 0.7);
+  color: #fff;
+  min-width: 20rem;
+  border-radius: 0.6rem;
+}
+
+.AuthPage form input,
+.AuthPage form button {
+  width: 14rem;
+  height: 2rem;
+  margin: 0 0 1.6rem;
+  padding: 0.6rem;
+}
+
+.AuthPage form h4 {
+  padding: 0 0 0.4rem;
+  margin: 1rem;
+  border-bottom: 2px solid#fff;
+}
+
+.AuthPage form > * {
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+.AuthPage form input {
+  border-radius: 0.4rem;
+  border: none;
+  transition: 0.3s;
+}
+
+.AuthPage form input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #fff;
+  border: 1px solid #666;
+}
+
+.AuthPage form span a:visited,
+.AuthPage form span a:link {
+  color: rgb(0, 212, 194);
+  text-decoration: underline;
+}
+/* end style */
+
+/* start animation */
+
+@keyframes cursor {
+  20% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes cursorMovement {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 20rem;
+  }
+}
+
+@keyframes write {
+  0% {
+    visibility: hidden;
+  }
+  40% {
+    visibility: hidden;
+  }
+  60% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+/* end animation */
+
+/* start  media queries */
+@media screen and (max-width: 320px) {
+  .AuthPage form {
+    min-width: 10rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.AuthPage {
+    flex-direction: column;
+  }
+}

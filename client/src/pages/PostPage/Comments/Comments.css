@@ -1,0 +1,62 @@
+.Comments {
+  position: relative;
+  width: 95%;
+  min-height: 6rem;
+  padding: 2rem 0;
+  margin: 0 2.5% 4rem;
+  /* word-wrap: break-word; */
+  box-shadow: 0 0 4px var(--font-clr);
+  border-radius: var(--border-radius);
+  background-color: var(--main-comp-clr);
+}
+
+.Comments div.comment {
+  width: 95%;
+  min-height: 3rem;
+  padding: 0.6rem;
+  margin: 0.8rem;
+  overflow: hidden;
+  word-wrap: break-word;
+  border-radius: 0.8rem;
+  align-items: flex-start;
+  box-shadow: 0 0 2px var(--font-clr);
+  background-color: var(--main-comp-clr);
+}
+
+.comment .User {
+  transform: scale(0.75) translate(-20%, -20%);
+}
+
+.Comments div.addComment {
+  width: 100%;
+}
+
+.addComment .addCommentInput {
+  width: 95%;
+  border-radius: 0.8rem;
+  border: none;
+  min-height: 3rem;
+  padding: 0.6rem;
+  margin: 0.4rem;
+  box-shadow: 0 0 4px var(--font-clr);
+}
+.addComment .addCommentInput:focus {
+  outline: none;
+}
+
+.addComment .submitComment {
+  border: none;
+  border-radius: 0 0.8rem 0.8rem 0;
+  padding: 0.9rem 0.4rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: #0000;
+  position: absolute;
+  right: 3%;
+}
+
+.Comments *:link,
+.Comments *:visited {
+  text-decoration: none;
+  color: #000;
+}

@@ -1,0 +1,10 @@
+.UserSection button {
+  padding: 0.6rem 1rem;
+  margin: 0 0 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  color: var(--font-clr);
+  box-shadow: 0 0 3px var(--font-clr);
+  background-color: var(--main-comp-clr);
+  cursor: pointer;
+}

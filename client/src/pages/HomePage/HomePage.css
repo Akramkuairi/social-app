@@ -1,0 +1,20 @@
+@import "../../GlobalVars.css";
+
+.HomePage {
+  display: flex;
+  justify-content: space-between;
+  margin: calc(var(--navbar-height) + 3rem) 0 0;
+  min-height: calc(100vh - var(--navbar-height));
+  width: 100vw;
+}
+
+.HomePage .ProfileCard {
+  min-height: 320px;
+}
+
+@media screen and (max-width: 640px) {
+  .HomePage {
+    flex-direction: column;
+    width: 100vw;
+  }
+}
